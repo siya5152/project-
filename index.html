@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Image</title>
+</head>
+<body>
+
+<h2>Upload an Image</h2>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    
+    <br><br>
+
+    <label>Select Operation:</label>
+    <select name="operation">
+        <option value="gray">Grayscale</option>
+        <option value="blur">Blur</option>
+        <option value="edge">Edge Detection</option>
+        <option value="invert">Invert</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Upload</button>
+</form>
+
+</body>
+</html>
